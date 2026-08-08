@@ -62,8 +62,13 @@ description: Use when the user asks for a bazi (八字) reading, Chinese horosco
 3. **五行分布**——哪旺哪缺，喜用神/忌神判断
 4. **十神格局**——围绕日主的十神配置，成什么格，用神是什么
 5. **大运与流年**——起运年龄、当前大运、今年/近年流年关键点
-6. **给用户的实在建议**——结合他问的方向：往哪发力最顺、注意什么、怎么把“短板”变“机会”；若知道 MBTI / 星座，把它们的优势与盲区揉进建议里讲（优势多讲，盲区给一步不拖住的做法）
-7. **一句温暖收尾**——鼓励 + 希望感，点到即止
+6. **四大领域（缺一不可，每个都按“亮点 → 提醒 → 能迈的一步”讲）**：
+   - **事业**——适合的方向与发力点：靠什么吃饭（才华 / 专业 / 合作）、往哪走最顺、当前大运流年的机遇与注意
+   - **健康与养生**——按五行喜忌给具体建议：哪个脏腑系统要多关照、作息运动饮食怎么调、什么季节环境对你好
+   - **情感**——按配偶星与夫妻宫讲性格面与相处之道：适合什么样的关系、怎么避开内耗、何时缘分更顺（只讲趋势，不下定论）
+   - **财运**——财星与格局怎么生财：财从哪来、怎么守住、什么时候宜进宜守
+7. **给用户的实在建议**——把四大领域的共性问题收拢成 2-3 条最要紧的行动；若知道 MBTI / 星座，把它们的优势与盲区揉进建议里讲（优势多讲，盲区给一步不拖住的做法）
+8. **一句温暖收尾**——鼓励 + 希望感，点到即止
 
 ## 校准（让结果更贴“准”）
 `references/calibration-samples/` 下可放入用户认可的准确样本（如曾付费做的八字/星盘解读，可脱敏）。分析时参考其风格与颗粒度，向“细致”靠拢——据用户经验，DeepSeek 等模型测的与网上收费的相差不大，差别主要在谁更细。没有样本就按古籍框架正常做。
@@ -137,8 +142,13 @@ The bazi is the required main reading; MBTI and zodiac are optional side dimensi
 3. **Five-element distribution** — what is strong, what is missing; favorable god / unfavorable god judgment
 4. **Ten gods and structure** — the ten-god configuration around the day master, what structure it forms, and what the useful god is
 5. **Luck periods and the current year** — age when luck begins, the current luck period, key points this year and in the coming years
-6. **Practical advice** — tied to what the user asked: where to push with the least resistance, what to watch out for, how to turn "weak spots" into opportunities; when you know their MBTI / zodiac, weave those strengths and blind spots into the advice (dwell on the strengths; for each blind spot, give one step that keeps it from dragging them down)
-7. **One warm closing line** — encouragement + a sense of hope, kept brief
+6. **The four life areas (none may be skipped; for each, follow "the light → the heads-up → one step you can take")**:
+   - **Career** — the direction and leverage that fit you: what you earn from (talent / expertise / collaboration), where you flow best, and the opportunities and cautions in the current luck period and year
+   - **Health and self-care** — concrete advice from the five-element balance: which organ systems need more care, how to adjust routine / exercise / diet, and which seasons and environments suit you
+   - **Relationships** — from the spouse star and the spouse palace, talk about the temperament side and how to relate: what kind of relationship fits you, how to avoid draining yourself, when connections flow better (trends only, never verdicts)
+   - **Wealth** — how your wealth star and chart structure make money: where it comes from, how to keep it, when to push and when to hold
+7. **Practical advice** — fold the common threads of the four areas into the 2-3 most important actions; when you know their MBTI / zodiac, weave those strengths and blind spots into the advice (dwell on the strengths; for each blind spot, give one step that keeps it from dragging them down)
+8. **One warm closing line** — encouragement + a sense of hope, kept brief
 
 ## Calibration (making results feel more "accurate")
 Put samples the user considers accurate into `references/calibration-samples/` (for example, paid bazi or star-chart readings, anonymized). During analysis, reference their style and granularity and move toward that level of detail — in the user's experience, what DeepSeek-class models produce is close to what paid online readers give; the difference is mostly who goes deeper. With no samples, just follow the classical framework normally.
