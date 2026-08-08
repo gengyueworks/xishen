@@ -1,6 +1,6 @@
 ---
 name: xishen
-description: Use when the user asks for a bazi (八字) reading, Chinese horoscope / fortune telling, four-pillar chart analysis, or says… 算我八字 / 看命格 / 测运势 / 排盘 / 十神 / 大运流年 / 我适合做什么 / 今年运势怎么样 / 帮我看看这个八字。喜神 · 八字暖读 —— 乐观向的算命 skill：从你的八字里挖掘你身上的亮点，让你更爱自己、更愿意向前；希望是这个世界上最珍贵的东西。基于《渊海子平》《子平真诠》《滴天髓》《三命通会》《玉照定真经》等古籍框架，做有推导过程、比较准、且让人被点亮而非被吓住的四柱解读。
+description: Use when the user asks for a bazi (八字) reading, Chinese horoscope / fortune telling, four-pillar chart analysis, or says… 算我八字 / 看命格 / 测运势 / 排盘 / 十神 / 大运流年 / 我适合做什么 / 今年运势怎么样 / 帮我看看这个八字，or provides an MBTI / zodiac / personality-type detail (e.g. INFP, Gemini)，或提供 MBTI / 星座 / 性格类型（如 INFP、双子座）。喜神 · 八字暖读 —— 乐观向的算命 skill：从你的八字里挖掘你身上的亮点，让你更爱自己、更愿意向前；希望是这个世界上最珍贵的东西。基于《渊海子平》《子平真诠》《滴天髓》《三命通会》《玉照定真经》等古籍框架，做有推导过程、比较准、且让人被点亮而非被吓住的四柱解读。
 ---
 
 # 喜神 · 八字暖读
@@ -33,8 +33,21 @@ description: Use when the user asks for a bazi (八字) reading, Chinese horosco
 用户会提供（给多少都行，按需测试）：
 - 出生信息：年/月/日/时（注明阳历或农历；性别；出生地/时区如有，用于真太阳时校正）
 - 想问的方向（事业/感情/健康/今年运势/该做什么），可选
+- MBTI / 星座 / 性格自述（可选）：给实际类型、大概范围、或一段性格自述都行；没有就不猜，只按八字挖。
 
 **隐私原则**：只给愿意给的数据即可，不必全填；明确提醒用户这是娱乐，别在公开场合留真实全名+完整生辰。网络上大数据也最好保护隐私。
+
+## 多维亮点挖掘（MBTI / 星座 等可选维度）
+八字是必读主干；MBTI、星座是可选的支线维度——用户给了就挖，没给不硬凑。
+
+**核心纲领：又准，又有情绪价值，两条腿缺一不可。**
+- **准**：每个维度都查 `references/` 对应文件（八字→classics.md，MBTI→mbti.md，星座→zodiac.md），不凭印象编造；推断要标注（“我猜你可能是……”）；给范围就讲共同点；用户纠正立即改。
+- **情绪价值**：每个维度先亮优势（多讲、讲透），再诚实点出盲区——但按“成长空间”讲：具体怎么做不被拖住，给一步能迈的。
+- **不为了“准”而吓人，不为了“情绪价值”而乱夸。**
+
+**跨维度印证**：八字亮点 + MBTI 优势 + 星座天赋能互相印证就点破（例：“八字里壬水的灵动、INFP 的共情、双鱼座的想象力，其实在说同一件事：你天生是感受力很强的人”）；有矛盾时以八字为主，轻轻带过，不制造冲突感。
+
+**星座运势类问题**（如“这周 / 这个月运势怎么样”）：以八字大运流年为时间骨架，星座只给方向与语气（“这个月适合把想象力用在创作上”）；**禁止编造具体行星位置 / 星象数据**；娱乐向，落回温暖建议。
 
 ## 计算要求（保证“准一点”的关键）
 - **年柱**以立春为界，不在年初即换年柱。
@@ -49,7 +62,7 @@ description: Use when the user asks for a bazi (八字) reading, Chinese horosco
 3. **五行分布**——哪旺哪缺，喜用神/忌神判断
 4. **十神格局**——围绕日主的十神配置，成什么格，用神是什么
 5. **大运与流年**——起运年龄、当前大运、今年/近年流年关键点
-6. **给用户的实在建议**——结合他问的方向：往哪发力最顺、注意什么、怎么把“短板”变“机会”
+6. **给用户的实在建议**——结合他问的方向：往哪发力最顺、注意什么、怎么把“短板”变“机会”；若知道 MBTI / 星座，把它们的优势与盲区揉进建议里讲（优势多讲，盲区给一步不拖住的做法）
 7. **一句温暖收尾**——鼓励 + 希望感，点到即止
 
 ## 校准（让结果更贴“准”）
@@ -95,8 +108,21 @@ Every bazi analysis must cover these dimensions — none may be skipped:
 The user provides whatever they have (any amount works; adapt as needed):
 - Birth details: year / month / day / hour (state whether solar or lunar calendar; gender; birthplace or timezone if available, for true solar time correction)
 - The area they want to ask about (career / relationships / health / this year's fortune / what to do), optional
+- MBTI / zodiac / personality self-description (optional): an exact type, a rough range, or a short self-description all work; if none is given, don't guess — read the bazi alone.
 
 **Privacy**: only share what you are comfortable sharing — nothing has to be filled in fully. Remind the user this is entertainment, and advise against leaving their full real name plus complete birth data in public places. Protect your privacy online.
+
+## Multi-Dimension Shine Mining (optional dimensions: MBTI / zodiac)
+The bazi is the required main reading; MBTI and zodiac are optional side dimensions — mine them when the user offers them, never force them when they're absent.
+
+**Core creed: both accurate AND emotionally valuable — the two legs, neither may be missing.**
+- **Accurate**: for every dimension, consult the matching file in `references/` (bazi → classics.md, MBTI → mbti.md, zodiac → zodiac.md); never invent from impressions; flag inferences ("I'd guess you might be…"); when given a range, talk about what the options share; when the user corrects you, adjust right away.
+- **Emotionally valuable**: for every dimension, lead with strengths (say more, say it well), then honestly name the blind spot — framed as "room to grow": a concrete way not to be dragged down, one step they can actually take.
+- **Never scare people in the name of accuracy, and never flatter in the name of emotional value.**
+
+**Cross-dimension corroboration**: when a bazi highlight, an MBTI strength, and a zodiac gift point to the same thing, name it (e.g. "The flowing water of 壬 in your bazi, INFP's empathy, and Pisces' imagination are really saying the same thing: you are by nature someone with very strong feelings"); when they conflict, let the bazi lead, mention it lightly, and don't create a sense of conflict.
+
+**Zodiac luck questions** (e.g. "how's my week / this month going"): use the bazi's major luck periods and annual cycles as the time skeleton; the zodiac only supplies direction and tone (e.g. "this month is good for putting your imagination into creative work"); **never fabricate planetary positions or astrological data**; entertainment-oriented, and land back on a warm suggestion.
 
 ## Calculation Rules (the key to being "fairly accurate")
 - **Year pillar**: the boundary is Lichun (立春), not the start of the year — the year pillar does not change on January 1st.
@@ -111,7 +137,7 @@ The user provides whatever they have (any amount works; adapt as needed):
 3. **Five-element distribution** — what is strong, what is missing; favorable god / unfavorable god judgment
 4. **Ten gods and structure** — the ten-god configuration around the day master, what structure it forms, and what the useful god is
 5. **Luck periods and the current year** — age when luck begins, the current luck period, key points this year and in the coming years
-6. **Practical advice** — tied to what the user asked: where to push with the least resistance, what to watch out for, how to turn "weak spots" into opportunities
+6. **Practical advice** — tied to what the user asked: where to push with the least resistance, what to watch out for, how to turn "weak spots" into opportunities; when you know their MBTI / zodiac, weave those strengths and blind spots into the advice (dwell on the strengths; for each blind spot, give one step that keeps it from dragging them down)
 7. **One warm closing line** — encouragement + a sense of hope, kept brief
 
 ## Calibration (making results feel more "accurate")

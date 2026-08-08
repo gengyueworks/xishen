@@ -20,7 +20,7 @@
 
 算完的感觉应该是“被点亮”，不是“被吓住”。
 
-**不依赖任何特定工具。** 本仓库就是一个标准 skill 文件夹（根目录含 `SKILL.md`），可在任意支持 agent skills 的运行环境安装——Claude Code / OpenCode / Codex / Gemini CLI / Cursor / WorkBuddy 等。装好之后，在对话里说一句生辰就能触发。
+**不依赖任何特定工具。** 本仓库就是一个标准 skill 文件夹（根目录含 `SKILL.md`），可在任意支持 agent skills 的运行环境安装——Claude Code / OpenCode / Codex / Gemini CLI / Cursor / WorkBuddy 等。装好之后，在对话里说一句生辰就能触发。除了八字主干，还支持可选维度——MBTI、星座——多维度互相印证，把亮点挖得更透。
 
 `xishen` is a **universal agent skill** — an upbeat bazi (八字) fortune-telling skill. It doesn't scare you, doesn't bring you down; it does one thing only: put the light that is good, strong, and yours in your chart on you, then gently point at the step forward. Give it a birth date and it builds a four-pillar reading grounded in the classical texts — but its real mission is emotional value:
 
@@ -31,7 +31,7 @@
 
 The feeling after a reading should be "lit up", not "scared".
 
-It is **not tied to any specific tool**. This repo is a standard skill folder (SKILL.md at its root) that installs into any runtime that supports agent skills — Claude Code, OpenCode, Codex, Gemini CLI, Cursor, WorkBuddy, and more. Once installed, just tell it your birth date in the chat and it triggers.
+It is **not tied to any specific tool**. This repo is a standard skill folder (SKILL.md at its root) that installs into any runtime that supports agent skills — Claude Code, OpenCode, Codex, Gemini CLI, Cursor, WorkBuddy, and more. Once installed, just tell it your birth date in the chat and it triggers. Beyond the bazi core, optional dimensions — MBTI and zodiac — are supported, so highlights can be mined across dimensions that corroborate each other.
 
 ---
 
@@ -89,9 +89,9 @@ Just copy this folder into the matching skills directory from the table above. T
 
 > 算我八字：公历 1995 年 8 月 12 日 14 时 30 分，女
 
-即可触发。英文环境的完整触发词见 `SKILL.md`。
+即可触发；还可以附带 MBTI / 星座，例如「算我八字：公历 1995 年 8 月 12 日 14 时 30 分，女，MBTI 是 INFP，双子座」；或者只给一段性格自述也行，例如「我不太确定，我比较内向爱幻想，容易拖延」。英文环境的完整触发词见 `SKILL.md`。
 
-Once installed, just say something like "算我八字：公历 1995 年 8 月 12 日 14 时 30 分，女" (read my bazi: solar calendar 1995-08-12, 14:30, female) in the chat. The full trigger words for English are in `SKILL.md`.
+Once installed, just say something like "算我八字：公历 1995 年 8 月 12 日 14 时 30 分，女" (read my bazi: solar calendar 1995-08-12, 14:30, female) in the chat. You can add an MBTI / zodiac detail — e.g. "算我八字：公历 1995 年 8 月 12 日 14 时 30 分，女，MBTI 是 INFP，双子座" — or just give a short self-description like "我不太确定，我比较内向爱幻想，容易拖延" ("not sure — I'm quite introverted, daydreamy, and prone to procrastination"). The full trigger words for English are in `SKILL.md`.
 
 ---
 
@@ -134,6 +134,8 @@ xishen/
 └── references/
     ├── classics.md               # 十神 / 强弱 / 用神 / 大运 关键概念速查
     ├── calc.md                   # 精确排盘（lunar_python）
+    ├── mbti.md                   # MBTI 16 型速查（中英双语）
+    ├── zodiac.md                 # 十二星座速查（中英双语）
     └── calibration-samples/      # 校准样本（可选）
 ```
 
