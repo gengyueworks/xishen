@@ -87,6 +87,10 @@ description: Use when the user asks for a bazi (八字) reading, Chinese horosco
 - 娱乐向，结尾加一句：“仅供参考，重大决策自己拿主意。”
 - 不替代医疗 / 财务 / 法律建议。
 
+## 相关技能（平行项目）
+
+- **life-audit（人生审计）**：与本文「八字暖读」平行的另一个 skill。它有两种模式——「了解自己版」（纯心理教练，完全无玄学）与「玄学版」（即基于本技能的八字框架做人生阶段审计）。想做不碰玄学的自我访谈、或把命局解读扩成一份可执行的「人生阶段审计」，去用 life-audit。
+
 ---
 
 ## English Version
@@ -176,3 +180,6 @@ Put samples the user considers accurate into `references/calibration-samples/` (
 ## Boundaries
 - Entertainment-oriented; close with: "For reference only — make major decisions yourself."
 - Not a substitute for medical / financial / legal advice.
+
+## Related skill (parallel project)
+- **life-audit (Life Audit)**: a sibling skill to this bazi reading. It offers two modes — "Know Yourself" (pure psychology, zero metaphysics) and the "Metaphysical" mode (this bazi framework applied as a life-stage audit). For a metaphysics-free self-interview, or to expand a chart reading into an actionable life-stage audit, use life-audit.
